@@ -1,0 +1,28 @@
+{
+  "name": "translate_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xumoyun-fullStack/translate_bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xumoyun-fullStack/translate_bot/issues"
+  },
+  "homepage": "https://github.com/xumoyun-fullStack/translate_bot#readme",
+  "dependencies": {
+    "@vitalets/google-translate-api": "^8.0.0",
+    "dotenv": "^16.0.0",
+    "mongoose": "^6.2.4",
+    "node-telegram-bot-api": "^0.56.0",
+    "nodemon": "^2.0.15"
+  }
+}
