@@ -183,3 +183,5 @@ bot.on("callback_query", async message => {
 })
 
 mongoose()
+
+bot.start();
