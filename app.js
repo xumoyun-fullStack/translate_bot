@@ -4,7 +4,7 @@ const users = require("./users");
 const TelegramBot = require("node-telegram-bot-api");
 const translate = require("@vitalets/google-translate-api");
 
-const bot = new TelegramBot(TOKEN);
+const bot = new TelegramBot('https://simplesampleapp.herokuapp.com/'+TOKEN);
 
 let languages = [
     [
@@ -181,5 +181,3 @@ bot.on("callback_query", async message => {
 })
 
 mongoose()
-
-bot.start();
