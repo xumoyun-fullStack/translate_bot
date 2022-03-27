@@ -4,9 +4,7 @@ const users = require("./users");
 const TelegramBot = require("node-telegram-bot-api");
 const translate = require("@vitalets/google-translate-api");
 
-const bot = new TelegramBot(TOKEN, {
-    polling: true,
-});
+const bot = new TelegramBot(TOKEN);
 
 let languages = [
     [
