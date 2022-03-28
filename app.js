@@ -4,7 +4,9 @@ const users = require("./users");
 const TelegramBot = require("node-telegram-bot-api");
 const translate = require("@vitalets/google-translate-api");
 const url = "https://tarjimonbotim.herokuapp.com:443"
-const bot = new TelegramBot(TOKEN);
+const bot = new TelegramBot(TOKEN, {
+    webHook: 443,
+});
 bot.setWebHook(`${url}/bot${TOKEN}`)
 
 let languages = [
