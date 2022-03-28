@@ -1,11 +1,13 @@
-const  TOKEN  = '5165965386:AAFQZsfY_idEqNxMss-Es0PC4MFzHp1_ILY';
+const  TOKEN  = "5165965386:AAFQZsfY_idEqNxMss-Es0PC4MFzHp1_ILY";
 const mongoose = require("./mongoose");
 const users = require("./users");
 const TelegramBot = require("node-telegram-bot-api");
 const translate = require("@vitalets/google-translate-api");
 const url = "https://tarjimonbotim.herokuapp.com:443"
 const bot = new TelegramBot(TOKEN, {
-    webHook: 443,
+    webHook: {
+        port: 443
+    },
 });
 bot.setWebHook(`${url}/bot${TOKEN}`)
 
