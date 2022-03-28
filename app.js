@@ -1,4 +1,4 @@
-const { TOKEN } = require("./config") || '5165965386:AAFQZsfY_idEqNxMss-Es0PC4MFzHp1_ILY';
+const  TOKEN  = '5165965386:AAFQZsfY_idEqNxMss-Es0PC4MFzHp1_ILY';
 const mongoose = require("./mongoose");
 const users = require("./users");
 const TelegramBot = require("node-telegram-bot-api");
